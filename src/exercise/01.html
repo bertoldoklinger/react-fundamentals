@@ -2,6 +2,20 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    const root = document.getElementById('root')
+    const div = document.createElement('div')
+
+    div.textContent = 'Hello World'
+    div.className = 'container'
+
+    root.append(div)
+  </script>
+</body>
+
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
